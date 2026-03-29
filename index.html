@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Creative Solutions | Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-blue: #020617;
+            --accent-yellow: #FACC15;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--dark-blue); 
+            color: #94A3B8;
+        }
+        .text-yellow { color: var(--accent-yellow); }
+        .bg-yellow { background-color: var(--accent-yellow); }
+        
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, #1e293b 0%, #020617 70%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background: rgba(2, 6, 23, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-yellow);
+            background: rgba(250, 204, 21, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- New Logo Link Integrated -->
+                <div class="relative w-12 h-12 overflow-hidden rounded-lg bg-white/5 flex items-center justify-center">
+                    <img src="https://i.postimg.cc/3xcjCt5M/Untitled-design.jpg" 
+                         alt="SCS Logo" 
+                         class="w-full h-full object-cover"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="hidden font-bold text-yellow">SCS</span>
+                </div>
+                <span class="text-white font-extrabold tracking-tighter text-xl uppercase hidden sm:block">Super Creative Solutions</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#home" class="text-white hover:text-yellow transition">Home</a>
+                <a href="#services" class="hover:text-yellow transition">Services</a>
+                <a href="#packages" class="hover:text-yellow transition">Packages</a>
+                <a href="#clients" class="hover:text-yellow transition">Clients</a>
+            </div>
+            <a href="https://wa.me/66927480566" class="bg-yellow text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition shadow-lg shadow-yellow-500/20">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-glow pt-48 pb-32 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-yellow font-bold tracking-[0.3em] uppercase text-sm mb-6">Innovate • Engage • Dominate</h2>
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-8 tracking-tighter">
+                Scale Your Brand in <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 leading-tight">TH & MM</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Super Creative Solutions specializes in premium media buying, localized content marketing, and strategic growth for Thailand & Myanmar business owners.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#contact" class="bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-yellow transition-all shadow-xl">Start Free Audit</a>
+                <a href="https://wa.me/66927480566" class="border border-white/10 px-10 py-5 rounded-2xl font-bold text-lg text-white hover:bg-white/5 transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-500"></i> WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-white mb-20 text-center tracking-tight">Our Marketing <span class="text-yellow">Expertise</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- SMM -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <div class="w-14 h-14 bg-yellow/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-yellow"></i>
+                    </div>
+                    <h4 class="text-white text-xl font-bold mb-4">Social Media Marketing</h4>
+                    <p class="text-sm leading-relaxed text-gray-400">Localized content creation and engagement strategy for Facebook & TikTok to capture the heart of your local audience.</p>
+                </div>
+                <!-- Media Buying -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <div class="w-14 h-14 bg-yellow/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-yellow"></i>
+                    </div>
+                    <h4 class="text-white text-xl font-bold mb-4">Media Buying</h4>
+                    <p class="text-sm leading-relaxed text-gray-400">Performance-driven Facebook and TikTok Ads management. We optimize for high ROAS and quality sales leads.</p>
+                </div>
+                <!-- Branding -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <div class="w-14 h-14 bg-yellow/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl text-yellow"></i>
+                    </div>
+                    <h4 class="text-white text-xl font-bold mb-4">Branding & Content</h4>
+                    <p class="text-sm leading-relaxed text-gray-400">Premium visual storytelling, logo design, and high-quality video content that builds lasting brand authority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section id="packages" class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-white text-center mb-16">Marketing <span class="text-yellow">Packages</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Silver -->
+                <div class="p-8 rounded-[2.5rem] border border-white/5 bg-white/5">
+                    <h4 class="text-2xl font-bold text-white mb-2 uppercase">Silver</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">520,000 Ks <span class="text-xs text-gray-500 font-normal">/ month</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 12 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 1 Reel Video</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Competitor Analysis</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Analytics & Report</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border border-white/20 py-4 rounded-xl font-bold text-white hover:bg-white hover:text-black transition">Get Started</a>
+                </div>
+                <!-- Gold -->
+                <div class="p-8 rounded-[2.5rem] border-2 border-yellow bg-yellow/5 relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow text-black px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recommended</span>
+                    <h4 class="text-2xl font-bold text-white mb-2 uppercase">Gold</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">700,000 Ks <span class="text-xs text-gray-500 font-normal">/ month</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 16 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 3 Reel Videos</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Digital Marketing Plan</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Events Plans & Ideas</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-yellow py-4 rounded-xl font-bold text-black hover:scale-105 transition">Get Started</a>
+                </div>
+                <!-- Diamond -->
+                <div class="p-8 rounded-[2.5rem] border border-white/5 bg-white/5">
+                    <h4 class="text-2xl font-bold text-white mb-2 uppercase">Diamond</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">980,000 Ks <span class="text-xs text-gray-500 font-normal">/ month</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 24 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 4 Reel Videos</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Boosting Strategic Plan</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> School Events Plans</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border border-white/20 py-4 rounded-xl font-bold text-white hover:bg-white hover:text-black transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Placeholder -->
+    <section id="clients" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-gray-500 uppercase tracking-[0.4em] text-xs mb-16 font-bold">Trusted by Brands in SE Asia</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+                <span class="text-xl font-extrabold text-white">RESTAURANTS</span>
+                <span class="text-xl font-extrabold text-white">EDUCATION</span>
+                <span class="text-xl font-extrabold text-white">HOTELS</span>
+                <span class="text-xl font-extrabold text-white">ESTATE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Lead Form -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-5xl font-bold text-white mb-8 tracking-tighter leading-tight">Ready to <span class="text-yellow">Dominate?</span></h2>
+                <p class="text-xl text-gray-400 mb-12 leading-relaxed">Schedule a free 15-minute consultation to see how we can grow your revenue.</p>
+                
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-yellow text-xl shadow-inner"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="text-xs uppercase font-bold text-gray-500 tracking-widest">Email Us</p>
+                            <p class="text-white font-bold">supercreativesolution@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-yellow text-xl shadow-inner"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="text-xs uppercase font-bold text-gray-500 tracking-widest">Call Us</p>
+                            <p class="text-white font-bold">MM: +959 789 246 593 <br> TH: +66 927 480 566</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 shadow-2xl">
+                <div class="grid gap-6">
+                    <input type="text" placeholder="Full Name" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white w-full transition" required>
+                    <input type="email" placeholder="Business Email" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white w-full transition" required>
+                    <select class="bg-[#0f172a] border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-gray-400 w-full transition">
+                        <option>Social Media Marketing</option>
+                        <option>Media Buying (Ads)</option>
+                        <option>Branding & Content</option>
+                    </select>
+                    <textarea placeholder="Tell us about your business goals..." rows="4" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white w-full transition"></textarea>
+                    <button class="bg-yellow text-black font-extrabold py-5 rounded-xl hover:shadow-xl hover:shadow-yellow-500/30 transition-all uppercase tracking-widest mt-2">Send Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-white/5 px-6 text-center">
+        <!-- New Logo in Footer -->
+        <div class="w-20 h-20 mx-auto mb-6 overflow-hidden rounded-full bg-white/5 flex items-center justify-center">
+            <img src="https://i.postimg.cc/3xcjCt5M/Untitled-design.jpg" alt="SCS Logo" class="w-full h-full object-cover">
+        </div>
+        <div class="text-white font-extrabold text-xl tracking-tighter mb-2">SUPER CREATIVE <span class="text-yellow">SOLUTIONS</span></div>
+        <p class="text-gray-600 text-sm mb-8">© 2024 SCS Agency. All rights reserved. <br> Innovate. Engage. Dominate.</p>
+        <div class="flex justify-center gap-6">
+            <a href="#" class="text-gray-500 hover:text-yellow text-xl transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-500 hover:text-yellow text-xl transition"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-gray-500 hover:text-yellow text-xl transition"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/66927480566" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
