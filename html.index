@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Creative Solutions | Innovate, Engage, Dominate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-blue: #020617;
+            --accent-yellow: #FACC15; /* Matching the yellow from the PDF */
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--dark-blue); 
+            color: #94A3B8;
+        }
+        .text-yellow { color: var(--accent-yellow); }
+        .bg-yellow { background-color: var(--accent-yellow); }
+        
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, #1e293b 0%, #020617 70%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background: rgba(2, 6, 23, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-yellow);
+            background: rgba(250, 204, 21, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-tr from-purple-500 via-pink-500 to-yellow-500 rounded-full flex items-center justify-center font-bold text-white italic">C</div>
+                <span class="text-white font-extrabold tracking-tighter text-xl uppercase">Super Creative Solutions</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#home" class="text-white hover:text-yellow transition">Home</a>
+                <a href="#services" class="hover:text-yellow transition">Strategy</a>
+                <a href="#packages" class="hover:text-yellow transition">Packages</a>
+                <a href="#clients" class="hover:text-yellow transition">Clients</a>
+            </div>
+            <a href="https://wa.me/66927480566" class="bg-yellow text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition shadow-lg shadow-yellow-500/20">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-glow pt-48 pb-32 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-yellow font-bold tracking-[0.3em] uppercase text-sm mb-6">Innovate • Engage • Dominate</h2>
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-8 tracking-tighter">
+                Digital Marketing <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 leading-tight">Agency</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                We blend innovation, engagement, and strategy to help your brand thrive in the <strong>Thailand & Myanmar</strong> markets.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#contact" class="bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:bg-yellow transition-all">Get More Sales Leads</a>
+                <a href="#services" class="border border-white/10 px-10 py-5 rounded-2xl font-bold text-lg text-white hover:bg-white/5 transition">Explore Strategies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission/Vision Section (Page 3 of PDF) -->
+    <section class="py-24 px-6 border-y border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-white/5 p-12 rounded-[2.5rem] border border-white/10">
+                <h3 class="text-yellow font-bold text-2xl mb-4">OUR MISSION</h3>
+                <p class="text-xl text-gray-300 leading-relaxed">To help brands grow through smart digital strategies, creative design, and results-driven engagement.</p>
+            </div>
+            <div class="bg-white/5 p-12 rounded-[2.5rem] border border-white/10">
+                <h3 class="text-yellow font-bold text-2xl mb-4">OUR VISION</h3>
+                <p class="text-xl text-gray-300 leading-relaxed">To transform brands through innovative ideas, strategic thinking, and measurable performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section (Page 5 of PDF) -->
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-20 text-center tracking-tight">Digital Marketing <span class="text-yellow">Strategy</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- SMM -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-hashtag text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Social Media Marketing</h4>
+                    <p class="text-sm leading-relaxed">Analyzing your social media presence and evaluating the consistency and effectiveness of your visual style.</p>
+                </div>
+                <!-- Content -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-pen-fancy text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Content Marketing</h4>
+                    <p class="text-sm leading-relaxed">Combining written, visual, and video content with strategic planning to engage audiences.</p>
+                </div>
+                <!-- Video -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-play-circle text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Video & Multimedia</h4>
+                    <p class="text-sm leading-relaxed">Creating video ads for YouTube, reels, shorts, and TikTok content including explainer videos.</p>
+                </div>
+                <!-- Branding -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-palette text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Branding & Creative</h4>
+                    <p class="text-sm leading-relaxed">Designing logos, visual identities, brand storytelling, and marketing materials like banners.</p>
+                </div>
+                <!-- Assessment -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-check-double text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Materials Assessment</h4>
+                    <p class="text-sm leading-relaxed">Assessing marketing collateral to ensure it adheres to brand guidelines and communicates effectively.</p>
+                </div>
+                <!-- Analytics -->
+                <div class="p-10 rounded-[2rem] bg-white/5 card-hover">
+                    <i class="fas fa-chart-bar text-3xl text-yellow mb-6"></i>
+                    <h4 class="text-white text-xl font-bold mb-4">Strategy & Analytics</h4>
+                    <p class="text-sm leading-relaxed">Marketing audits, competitor analysis, KPI setting, and ROI tracking with campaign insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section (Page 7 & 8) -->
+    <section id="clients" class="py-24 px-6 bg-white/[0.02]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-gray-400 uppercase tracking-[0.4em] text-xs mb-16 font-bold">Our Trusted Clients — Myanmar & Thailand</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+                <div class="text-white font-bold text-2xl">EDUCATION</div>
+                <div class="text-white font-bold text-2xl">RESTAURANTS</div>
+                <div class="text-white font-bold text-2xl">HOTELS</div>
+                <div class="text-white font-bold text-2xl">VISA & ESTATE</div>
+            </div>
+            <p class="text-center mt-12 text-gray-500 italic">Join 50+ regional brands who innovate with SCS.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Packages (Page 14 & 16 Combined) -->
+    <section id="packages" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-white text-center mb-16">Marketing <span class="text-yellow">Packages</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Silver -->
+                <div class="p-8 rounded-[2.5rem] border border-white/5 bg-white/5">
+                    <h4 class="text-2xl font-bold text-white mb-2">SILVER</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">520,000 Ks <span class="text-xs text-gray-500">/mo</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 12 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 1 Reel Video</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Competitor Analysis</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Monthly Content Calendar</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Analytics & Report</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border border-white/20 py-4 rounded-xl font-bold text-white hover:bg-white hover:text-black transition">Choose Silver</a>
+                </div>
+                <!-- Gold (Featured) -->
+                <div class="p-8 rounded-[2.5rem] border-2 border-yellow bg-yellow/5 relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow text-black px-4 py-1 rounded-full text-xs font-bold uppercase">Popular</span>
+                    <h4 class="text-2xl font-bold text-white mb-2">GOLD</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">700,000 Ks <span class="text-xs text-gray-500">/mo</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 16 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 3 Reel Videos</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Digital Marketing Plan</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Creative Campaign Ideas</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Events Plans & Ideas</li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-yellow py-4 rounded-xl font-bold text-black hover:scale-105 transition">Choose Gold</a>
+                </div>
+                <!-- Diamond -->
+                <div class="p-8 rounded-[2.5rem] border border-white/5 bg-white/5">
+                    <h4 class="text-2xl font-bold text-white mb-2">DIAMOND</h4>
+                    <p class="text-yellow font-bold text-3xl mb-8">980,000 Ks <span class="text-xs text-gray-500">/mo</span></p>
+                    <ul class="space-y-4 text-sm text-gray-400 mb-8">
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 24 Posts / Month</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> 4 Reel Videos</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> Boosting Strategic Plan</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> YT/Viber/Telegram Setup</li>
+                        <li><i class="fas fa-check text-yellow mr-2"></i> School Events Plans</li>
+                    </ul>
+                    <a href="#contact" class="block text-center border border-white/20 py-4 rounded-xl font-bold text-white hover:bg-white hover:text-black transition">Choose Diamond</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Lead Form -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-5xl font-bold text-white mb-8 tracking-tighter leading-tight">Ready to <span class="text-yellow">Dominate</span> your market?</h2>
+                <p class="text-xl text-gray-400 mb-12">Contact our regional experts in Bangkok or Yangon today.</p>
+                
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-yellow text-xl"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="text-xs uppercase font-bold text-gray-500">Email Us</p>
+                            <p class="text-white font-bold">supercreativesolution@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-yellow text-xl"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="text-xs uppercase font-bold text-gray-500">Call Us</p>
+                            <p class="text-white font-bold">MM: +959 789 246 593 <br> TH: +66 927 480 566</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="p-10 rounded-[2.5rem] bg-white/5 border border-white/10">
+                <div class="grid gap-6">
+                    <input type="text" placeholder="Your Name" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white">
+                    <input type="email" placeholder="Business Email" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white">
+                    <select class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-gray-400">
+                        <option>Service: FB Marketing</option>
+                        <option>Service: TikTok Marketing</option>
+                        <option>Service: Logo & Branding</option>
+                        <option>Service: Combo Package</option>
+                    </select>
+                    <textarea placeholder="Tell us about your project" rows="4" class="bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-yellow text-white"></textarea>
+                    <button class="bg-yellow text-black font-extrabold py-5 rounded-xl hover:shadow-xl hover:shadow-yellow-500/30 transition-all uppercase tracking-widest">Send My Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 px-6 text-center">
+        <div class="text-white font-extrabold text-xl mb-4">SCS.</div>
+        <p class="text-gray-600 text-sm">© 2024 Super Creative Solutions. Innovate. Engage. Dominate.</p>
+    </footer>
+
+    <!-- Sticky WhatsApp (TH Phone from PDF) -->
+    <a href="https://wa.me/66927480566" class="fixed bottom-10 right-10 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
